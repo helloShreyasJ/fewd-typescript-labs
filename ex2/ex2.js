@@ -1,3 +1,7 @@
+/**
+ * prints sum of firstVal and secondVal
+ * @param value string parameter
+ */
 function addition(value) {
     console.log("Value is: " + value);
 }
