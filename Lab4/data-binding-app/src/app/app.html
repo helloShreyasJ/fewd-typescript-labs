@@ -1,0 +1,16 @@
+{{title()}}
+{{name}}
+<br>
+<!-- red star when double clicked show/hide h2 text -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg" height="42" width="42" (dblclick)="onImageClick()">
+
+<!-- show and hide attributes -->
+<h2 [hidden]="myBoolean">Look at star</h2>
+<br>
+
+<!-- button click increments count -->
+<button (click)="onClickButton()">Press Me!</button>
+<p>The number of times the button has been pressed is: {{count}}</p>
+
+<!-- use app-list-component -->
+<app-list-component></app-list-component>
