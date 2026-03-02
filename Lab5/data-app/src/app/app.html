@@ -1,0 +1,17 @@
+<!-- Clear out app.html -->
+
+<!-- Ordered list of students -->
+<h1>Student App</h1>
+<ol>
+  @for(student of students; track student.id) {
+    <li>{{student.id}}, {{student.name}}, {{student.course}}</li>
+  }
+</ol>
+
+<!-- Weather description in Galway-->
+<br>
+<h1>Weather In Galway</h1>
+
+<!-- Temperature In Galway -->
+<p>{{weather[0].main}}, {{weather[0].description}}</p>
+<p>{{temp}}</p>
