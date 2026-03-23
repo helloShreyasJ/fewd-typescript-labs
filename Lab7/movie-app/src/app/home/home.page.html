@@ -8,7 +8,7 @@
 
 <ion-content [fullscreen]="true">
   
-  <!-- Un-ordered list of Shrek Movies-->
+  <!-- Simple Un-ordered list of Shrek Movies-->
   <!-- <ul>
       @for (m of shrekMovies; track m) {
         <li>
@@ -20,9 +20,8 @@
       }
   </ul> -->
 
-<!-- Card Component In Ionic-->
+<!-- Use Picture Frame Card Component In Ionic-->
 <!--
-  
 @for (m of shrekMovies; track m) {
   <ion-card>
     <img alt="Shrek_Poster" src={{m.Poster}} />
@@ -39,6 +38,8 @@
 
 -->
 
+<!-- List movies using the list template for ion cards -->
+<!-- https://ionicframework.com/docs/api/card -->
 
 @for (m of shrekMovies; track m) {
 <ion-card>
