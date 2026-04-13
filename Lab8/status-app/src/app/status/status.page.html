@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Update Status Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <!-- databind status to variable in status.page.ts-->
+    <ion-radio-group [(ngModel)]="status">
+      <ion-item>
+        <ion-radio value="Happy">Happy</ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-radio value="Sad">Sad</ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-radio value="Energetic">Energetic</ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-radio value="Lazy">Lazy</ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="saveStatus()" [routerLink]="['/home']">Save Status</ion-button>
+</ion-content>
